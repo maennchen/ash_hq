@@ -1,5 +1,6 @@
 [
   import_deps: [
+    :ash_atlas,
     :ash_ai,
     :ecto,
     :phoenix,

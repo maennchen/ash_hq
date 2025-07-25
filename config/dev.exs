@@ -1,5 +1,8 @@
 import Config
 
+config :ash_hq,
+  dev_routes: true
+
 # Configure your database
 config :ash_hq, AshHq.Repo,
   username: "postgres",

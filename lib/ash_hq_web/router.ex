@@ -112,4 +112,14 @@ defmodule AshHqWeb.Router do
     password = System.fetch_env!("ADMIN_AUTH_PASSWORD")
     Plug.BasicAuth.basic_auth(conn, username: username, password: password)
   end
+
+  if Application.compile_env(:ash_hq, :dev_routes) do
+    import AshAtlas.Router
+
+    scope "/atlas" do
+      pipe_through :browser
+
+      ash_atlas("/")
+    end
+  end
 end

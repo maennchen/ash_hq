@@ -25,6 +25,8 @@ defmodule AshHqWeb.Endpoint do
     gzip: false,
     only: AshHqWeb.static_paths()
 
+  plug Plug.Static, at: "/atlas", from: :ash_atlas, gzip: true, only: AshAtlas.Web.static_paths()
+
   if Code.ensure_loaded?(Tidewave) do
     plug Tidewave
   end

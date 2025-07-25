@@ -341,8 +341,8 @@ defmodule AshHqWeb.Pages.Home do
             </a>
           </div>
         </div>
-
-        <!-- Ash AI Launch Video Section -->
+        
+    <!-- Ash AI Launch Video Section -->
         <div class="flex flex-col w-full dark:bg-none dark:bg-opacity-0 py-16">
           <div class="flex flex-col w-full max-w-4xl mx-auto px-4">
             <div class="text-center w-full text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">
@@ -365,7 +365,7 @@ defmodule AshHqWeb.Pages.Home do
             </div>
           </div>
         </div>
-
+        
     <!-- will unhide this when we have more logos -->
         <div class="hidden flex flex-col w-full dark:bg-none dark:bg-opacity-0 py-6">
           <div class="flex flex-col w-full">
